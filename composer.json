@@ -1,11 +1,16 @@
 {
-    "name": "scalp/scalp",
+    "name": "simonlucalandi/scalp",
     "description": "Some Scala useful classes ported to PHP.",
     "authors": [
         {
             "name": "Paweł Wacławczyk",
             "email": "p.a.waclawczyk@gmail.com"
+        },
+        {
+            "name": "Simonluca Landi",
+            "email": "simonluca.landi@gmail.com"
         }
+ 
     ],
     "type": "library",
     "license": "MIT",
@@ -26,15 +31,10 @@
         ]
     },
     "require": {
-        "php": "~7.1"
+        "php": "~7.4"
     },
     "require-dev": {
         "symfony/var-dumper": "^3.3",
-        "phpunit/phpunit": "~6.2.4"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1.x-dev"
-        }
+        "phpunit/phpunit": "^6.2.4"
     }
 }
