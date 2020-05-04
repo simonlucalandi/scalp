@@ -9,9 +9,8 @@ namespace Scalp\Type {
     function restrictCallableReturnType(callable $f, string $expectedType): void
     {
         $rf = reflectionFunction($f);
-
         $valid = $rf->hasReturnType()
-            ? checkType((string) $rf->getReturnType(), $expectedType)
+            ? checkType($rf->getReturnType()->getName(), $expectedType)
             : false;
 
         if (!$valid) {
